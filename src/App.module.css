@@ -1,0 +1,65 @@
+.defaultLayout {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr;
+  margin: 5vh auto;
+
+
+  width: 90vw;
+  height: 90vh;
+}
+
+
+.tokensDisplay {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  border-radius: .5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3), 0 2px 5px 0 rgba(0, 0, 0, .6);
+}
+
+.tokensDisplay::-webkit-scrollbar {
+  display: none;
+}
+
+.tokensDisplay div {
+  margin: 1rem 0;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.inputDisplay {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDisplay:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.inputDisplay input {
+  width: 90%;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputDisplayIcon {
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.inputDisplayIcon:hover {
+  font-size: 1.2rem;
+}
